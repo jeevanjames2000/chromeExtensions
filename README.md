@@ -40,21 +40,31 @@ YouTube API for video tutorials.
 Google Custom Search API for articles and blogs.
 Displays results in a styled, scrollable, and draggable container.
 Easily removable via a close button.
-Implementation Details
-DOM Manipulation
-Button Injection:
+
+# Implementation Details
+
+# DOM Manipulation
+
+# Button Injection:
+
 The button is dynamically injected into the DOM by targeting the headerContainer element using querySelector.
 The position of the button is styled with CSS to appear at the bottom-right corner of the page.
 Event Monitoring:
 A MutationObserver monitors changes in the DOM to ensure the button is only added once the target element is available.
-URL Handling
+
+# URL Handling
+
 Extracts the problem name from the URL using window.location.href and a regular expression.
 Formats the extracted problem name (e.g., replacing hyphens with spaces).
-APIs Used
+
+# APIs Used
+
 YouTube API: Fetches video tutorials related to the problem.
 Google Custom Search API: Retrieves links to relevant solutions and articles.
-How It Works
-Button Injection:
+
+# How It Works
+
+# Button Injection:
 
 When the extension is loaded, a button labeled "Show Solutions" is added to the LeetCode page.
 Problem Name Extraction:
