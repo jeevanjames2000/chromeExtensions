@@ -12,7 +12,7 @@
   "host_permissions": ["https://leetcode.com/*"],
   "content_scripts": [
     {
-      "matches": ["https://leetcode.com/*"],
+      "matches": ["https://leetcode.com/problems/*"],
       "js": ["contentScript.js"],
       "css": ["popup.css"],
       "run_at": "document_end"

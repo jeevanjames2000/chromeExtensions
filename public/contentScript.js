@@ -16,7 +16,7 @@ const observer = new MutationObserver((mutations, obs) => {
       cursor: pointer;
       font-size: 16px;
       z-index: 9999;
-      position: absolute;
+      position: fixed;
       bottom: 50px;
       right: 40px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
