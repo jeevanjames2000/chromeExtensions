@@ -1,10 +1,11 @@
-Here’s a draft for your README file:
+# LeetCode Show Solutions Chrome Extension
 
-LeetCode Show Solutions Chrome Extension
-Overview
+# Overview
+
 The LeetCode Show Solutions Chrome Extension is a browser extension that allows users to quickly fetch solutions for coding problems on LeetCode. The extension injects a custom button into the LeetCode interface, and upon clicking, it fetches related solutions from YouTube and Google, displaying them in a draggable, resizable container.
 
-Features
+# Features
+
 Injects a "Show Solutions" button into the LeetCode DOM.
 Uses the current URL to extract the problem name dynamically.
 Fetches solutions from:
@@ -26,13 +27,12 @@ APIs Used
 YouTube API: Fetches video tutorials related to the problem.
 Google Custom Search API: Retrieves links to relevant solutions and articles.
 
-Here’s a draft for your README file:
+# Overview
 
-LeetCode Show Solutions Chrome Extension
-Overview
 The LeetCode Show Solutions Chrome Extension is a browser extension that allows users to quickly fetch solutions for coding problems on LeetCode. The extension injects a custom button into the LeetCode interface, and upon clicking, it fetches related solutions from YouTube and Google, displaying them in a draggable, resizable container.
 
-Features
+# Features
+
 Injects a "Show Solutions" button into the LeetCode DOM.
 Uses the current URL to extract the problem name dynamically.
 Fetches solutions from:
