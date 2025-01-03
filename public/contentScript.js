@@ -12,13 +12,13 @@ const observer = new MutationObserver((mutations, obs) => {
       color: white;
       border: none;
       border-radius: 4px;
-      padding: 12px 20px;
+      padding: 10px 10px;
       cursor: pointer;
       font-size: 16px;
       z-index: 9999;
       position: fixed;
       bottom: 50px;
-      right: 40px;
+      right: 30px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     `;
     extensionButton.addEventListener("click", () => {
@@ -98,6 +98,9 @@ const displaySolution = (youtubeResults, googleResults, problemName) => {
   `;
   const title = document.createElement("h1");
   title.textContent = `Solutions for: ${problemName}`;
+  title.style.color = "black";
+  title.style.fontSize = "15px";
+  title.style.fontWeight = "bold";
   solutionContainer.appendChild(title);
   const youtubeSection = document.createElement("section");
   youtubeSection.innerHTML = '<h2 style="color: black;">YouTube Videos:</h2>';
@@ -112,7 +115,7 @@ const displaySolution = (youtubeResults, googleResults, problemName) => {
   });
   solutionContainer.appendChild(youtubeSection);
   const googleSection = document.createElement("section");
-  googleSection.innerHTML = '<h2 style="color: black;">Solutions:</h2>';
+  googleSection.innerHTML = `<h2 style="color: black;font-size:"15px;">Solutions for: ${problemName}</h2>`;
   googleResults.forEach((result) => {
     const resultElement = document.createElement("div");
     resultElement.style.marginBottom = "10px";
