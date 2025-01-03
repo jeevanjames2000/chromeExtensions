@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "short_name": "Notes",
+  "name": "Leetcode Solutions",
+  "description": "Displays solutions for the currently opened problem when the 'Show Solutions' button is clicked.",
+  "version": "1.0",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "logo192.png"
+  },
+  "host_permissions": ["https://leetcode.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://leetcode.com/*"],
+      "js": ["contentScript.js"],
+      "css": ["popup.css"],
+      "run_at": "document_end"
+    }
+  ],
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
+
+  "background": {
+    "service_worker": "background.js"
+  }
+}
